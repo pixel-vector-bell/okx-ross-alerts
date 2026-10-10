@@ -21,7 +21,7 @@ a{color:#5bb0ff;text-decoration:none}
 @keyframes p{0%{opacity:1}50%{opacity:.3}100%{opacity:1}}
 </style></head><body>
 <h1>Ross Breakout Alert System <span style="color:#8a97a5;font-size:12px">· alerts only · no trading</span></h1>
-<p class="sub"><span class="pulse"></span>Reuses frozen <b>ross-v2</b> logic (imported from okx-ross-momentum). Generated 2026-10-10 12:47:13Z · scan #878 · universe 28 · BTC regime <b>UP/NORMAL</b> · <a href="https://pixel-vector-bell.github.io/okx-paper-lab/">lab</a></p>
+<p class="sub"><span class="pulse"></span>Reuses frozen <b>ross-v2</b> logic (imported from okx-ross-momentum). Generated 2026-10-10 12:50:20Z · scan #881 · universe 29 · BTC regime <b>UP/NORMAL</b> · <a href="https://pixel-vector-bell.github.io/okx-paper-lab/">lab</a></p>
 <div class="cards">
   <div class="card timer"><div class="n" id="since">—</div><div class="l">Last scanned</div></div>
   <div class="card"><div class="n">3</div><div class="l">Watchlist</div></div>
@@ -36,7 +36,7 @@ a{color:#5bb0ff;text-decoration:none}
 </table>
 <p class="note">Levels map 1:1 onto Ross's own gates: WATCHLIST = liquidity+spread+1h&ge;+5%+relvol&ge;1.5; SETUP FORMING = valid impulse/pullback/flag on last closed 5m candle; ENTRY CONFIRMED = Ross confirm_5m (close&gt;flag high, vol&gt;flag vol, VWAP held) on a completed candle. "ret since / MFE / MAE" track subsequent price performance after each alert. Unavailable values shown as n/a, never faked. Scanner runs every 5 min; page auto-refreshes every 60s.</p>
 <script>
-var LAST=1791636433604;
+var LAST=1791636620004;
 function tick(){
   var el=document.getElementById('since');
   if(!LAST){el.textContent='—';return;}
