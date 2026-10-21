@@ -21,7 +21,7 @@ a{color:#5bb0ff;text-decoration:none}
 @keyframes p{0%{opacity:1}50%{opacity:.3}100%{opacity:1}}
 </style></head><body>
 <h1>Ross Breakout Alert System <span style="color:#8a97a5;font-size:12px">· alerts only · no trading</span></h1>
-<p class="sub"><span class="pulse"></span>Reuses frozen <b>ross-v2</b> logic (imported from okx-ross-momentum). Generated 2026-10-21 16:16:26Z · scan #15317 · universe 28 · BTC regime <b>UP/NORMAL</b> · <a href="https://pixel-vector-bell.github.io/okx-paper-lab/">lab</a></p>
+<p class="sub"><span class="pulse"></span>Reuses frozen <b>ross-v2</b> logic (imported from okx-ross-momentum). Generated 2026-10-21 16:20:23Z · scan #15319 · universe 28 · BTC regime <b>UP/NORMAL</b> · <a href="https://pixel-vector-bell.github.io/okx-paper-lab/">lab</a></p>
 <div class="cards">
   <div class="card timer"><div class="n" id="since">—</div><div class="l">Last scanned</div></div>
   <div class="card"><div class="n">1</div><div class="l">Watchlist</div></div>
@@ -32,11 +32,11 @@ a{color:#5bb0ff;text-decoration:none}
 <table>
 <tr><th>time (UTC)</th><th>level</th><th>token</th><th>price</th><th>1h</th><th>relvol</th><th>spread</th>
 <th>breakout</th><th>stop</th><th>target</th><th>ret since</th><th>MFE</th><th>MAE</th><th>sent</th></tr>
-<tr><td class='t'>2026-10-21 16:02:02</td><td><span class='lvl' style='background:#d9a441'>SETUP FORMING</span></td><td><a href='https://www.okx.com/trade-spot/strk-usdt' target='_blank'>STRK</a></td><td>0.06220</td><td>+7.02%</td><td>10.59x</td><td>0.049%</td><td>0.06434</td><td>0.06164</td><td>0.06285</td><td class='neg'>-2.40%</td><td class='pos'>+1.09%</td><td class='neg'>-2.40%</td><td>no</td></tr><tr><td class='t'>2026-10-21 16:02:00</td><td><span class='lvl' style='background:#6b7a8f'>WATCHLIST</span></td><td><a href='https://www.okx.com/trade-spot/ena-usdt' target='_blank'>ENA</a></td><td>0.22117</td><td>+5.57%</td><td>6.10x</td><td>0.027%</td><td>n/a</td><td>n/a</td><td>n/a</td><td class='neg'>-0.30%</td><td class='pos'>+0.14%</td><td class='neg'>-0.44%</td><td>no</td></tr>
+<tr><td class='t'>2026-10-21 16:02:02</td><td><span class='lvl' style='background:#d9a441'>SETUP FORMING</span></td><td><a href='https://www.okx.com/trade-spot/strk-usdt' target='_blank'>STRK</a></td><td>0.06220</td><td>+7.02%</td><td>10.59x</td><td>0.049%</td><td>0.06434</td><td>0.06164</td><td>0.06285</td><td class='neg'>-1.80%</td><td class='pos'>+1.09%</td><td class='neg'>-2.40%</td><td>no</td></tr><tr><td class='t'>2026-10-21 16:02:00</td><td><span class='lvl' style='background:#6b7a8f'>WATCHLIST</span></td><td><a href='https://www.okx.com/trade-spot/ena-usdt' target='_blank'>ENA</a></td><td>0.22117</td><td>+5.57%</td><td>6.10x</td><td>0.027%</td><td>n/a</td><td>n/a</td><td>n/a</td><td class='neg'>-0.09%</td><td class='pos'>+0.14%</td><td class='neg'>-0.44%</td><td>no</td></tr>
 </table>
 <p class="note">Levels map 1:1 onto Ross's own gates: WATCHLIST = liquidity+spread+1h&ge;+5%+relvol&ge;1.5; SETUP FORMING = valid impulse/pullback/flag on last closed 5m candle; ENTRY CONFIRMED = the paper bot's EXACT live-1m entry trigger (breakout through flag high with expanding volume, or aggressive flag-top reclaim) &mdash; so an ENTRY CONFIRMED alert means the okx-ross-paper bot would buy this right now, not just that a 5m setup confirmed. "ret since / MFE / MAE" track subsequent price performance after each alert. Unavailable values shown as n/a, never faked. Scanner runs every 1 min; page auto-refreshes every 60s.</p>
 <script>
-var LAST=1792599386308;
+var LAST=1792599622995;
 function tick(){
   var el=document.getElementById('since');
   if(!LAST){el.textContent='—';return;}
