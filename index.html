@@ -21,7 +21,7 @@ a{color:#5bb0ff;text-decoration:none}
 @keyframes p{0%{opacity:1}50%{opacity:.3}100%{opacity:1}}
 </style></head><body>
 <h1>Ross Breakout Alert System <span style="color:#8a97a5;font-size:12px">· alerts only · no trading</span></h1>
-<p class="sub"><span class="pulse"></span>Reuses frozen <b>ross-v2</b> logic (imported from okx-ross-momentum). Generated 2026-10-24 10:28:39Z · scan #18953 · universe 25 · BTC regime <b>DOWN/NORMAL</b> · <a href="https://pixel-vector-bell.github.io/okx-paper-lab/">lab</a></p>
+<p class="sub"><span class="pulse"></span>Reuses frozen <b>ross-v2</b> logic (imported from okx-ross-momentum). Generated 2026-10-24 10:31:43Z · scan #18956 · universe 25 · BTC regime <b>DOWN/NORMAL</b> · <a href="https://pixel-vector-bell.github.io/okx-paper-lab/">lab</a></p>
 <div class="cards">
   <div class="card timer"><div class="n" id="since">—</div><div class="l">Last scanned</div></div>
   <div class="card"><div class="n">0</div><div class="l">Watchlist</div></div>
@@ -36,7 +36,7 @@ a{color:#5bb0ff;text-decoration:none}
 </table>
 <p class="note">Levels map 1:1 onto Ross's own gates: WATCHLIST = liquidity+spread+1h&ge;+5%+relvol&ge;1.5; SETUP FORMING = valid impulse/pullback/flag on last closed 5m candle; ENTRY CONFIRMED = the paper bot's EXACT live-1m entry trigger (breakout through flag high with expanding volume, or aggressive flag-top reclaim) &mdash; so an ENTRY CONFIRMED alert means the okx-ross-paper bot would buy this right now, not just that a 5m setup confirmed. "ret since / MFE / MAE" track subsequent price performance after each alert. Unavailable values shown as n/a, never faked. Scanner runs every 1 min; page auto-refreshes every 60s.</p>
 <script>
-var LAST=1792837719355;
+var LAST=1792837903462;
 function tick(){
   var el=document.getElementById('since');
   if(!LAST){el.textContent='—';return;}
